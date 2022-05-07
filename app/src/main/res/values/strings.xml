@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ProjetoEco</string>
+    <string name="botao_entrar">Entrar</string>
+    <string name="link_cadastrar">Criar cadastro</string>
+    <string name="link_esqueci_senha">Esqueci minha senha</string>
+    <string name="text_cadastro">Cadastro</string>
+</resources>
