@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -12,16 +19,157 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text_cadastro"
-        android:textSize="50sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         android:textColor="@color/black"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         />
 
-    
-    
+    <View
+        android:id="@+id/containerComponentsPessoal"
+        style="@style/ContainerComponents"
+        android:layout_height="235dp"
+        app:layout_constraintTop_toBottomOf="@id/textCadastro"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/editNome"
+        style="@style/EditText"
+        android:hint="Nome"
+        android:inputType="text"
+        android:padding="17dp"
+        app:layout_constraintTop_toTopOf="@id/containerComponentsPessoal"
+        app:layout_constraintStart_toEndOf="@id/containerComponentsPessoal"
+        app:layout_constraintEnd_toEndOf="@id/containerComponentsPessoal"
+        />
+
+    <EditText
+        android:id="@+id/editEmail"
+        style="@style/EditText"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:padding="17dp"
+        app:layout_constraintTop_toBottomOf="@id/editNome"
+        app:layout_constraintStart_toEndOf="@id/containerComponentsPessoal"
+        app:layout_constraintEnd_toEndOf="@id/containerComponentsPessoal"
+        />
+
+    <EditText
+        android:id="@+id/editFone"
+        style="@style/EditText"
+        android:hint="Senha"
+        android:inputType="numberPassword"
+        android:padding="17dp"
+        app:layout_constraintTop_toBottomOf="@id/editEmail"
+        app:layout_constraintStart_toEndOf="@id/containerComponentsPessoal"
+        app:layout_constraintEnd_toEndOf="@id/containerComponentsPessoal"
+
+        />
+
+    <View
+        android:id="@+id/containerComponentsEndereco"
+        style="@style/ContainerComponents"
+        android:layout_height="310dp"
+        app:layout_constraintTop_toBottomOf="@id/containerComponentsPessoal"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/editCEP"
+        style="@style/EditText"
+        android:hint="CEP"
+        android:inputType="number"
+        android:padding="17dp"
+        app:layout_constraintTop_toTopOf="@id/containerComponentsEndereco"
+        app:layout_constraintStart_toEndOf="@id/containerComponentsEndereco"
+        app:layout_constraintEnd_toEndOf="@id/containerComponentsEndereco"
+
+        />
+
+    <EditText
+        android:id="@+id/editLogradouro"
+        style="@style/EditText"
+        android:hint="Logradouro"
+        android:inputType="text"
+        android:padding="17dp"
+        app:layout_constraintTop_toBottomOf="@id/editCEP"
+        app:layout_constraintStart_toEndOf="@id/containerComponentsEndereco"
+        app:layout_constraintEnd_toEndOf="@id/containerComponentsEndereco"
+        />
+
+    <EditText
+        android:id="@+id/editBairro"
+        style="@style/EditText"
+        android:hint="Bairro"
+        android:inputType="text"
+        android:layout_marginRight="150dp"
+        android:padding="17dp"
+        app:layout_constraintTop_toBottomOf="@id/editLogradouro"
+        app:layout_constraintEnd_toStartOf="@id/editNumero"
+        app:layout_constraintStart_toStartOf="@id/containerComponentsEndereco"
+        />
+
+    <EditText
+        android:id="@+id/editNumero"
+        style="@style/EditText"
+        android:hint="Nº"
+        android:inputType="number"
+        android:layout_marginLeft="275dp"
+        android:padding="17dp"
+        app:layout_constraintTop_toBottomOf="@id/editLogradouro"
+        app:layout_constraintStart_toEndOf="@id/editBairro"
+        app:layout_constraintEnd_toEndOf="@id/containerComponentsEndereco"
+        />
+
+    <EditText
+        android:id="@+id/editCidade"
+        style="@style/EditText"
+        android:hint="Cidade"
+        android:inputType="text"
+        android:layout_marginRight="150dp"
+        android:padding="17dp"
+        app:layout_constraintTop_toBottomOf="@id/editBairro"
+        app:layout_constraintEnd_toStartOf="@id/editUF"
+        app:layout_constraintStart_toStartOf="@id/containerComponentsEndereco"
+        />
+
+    <EditText
+        android:id="@+id/editUF"
+        style="@style/EditText"
+        android:hint="UF"
+        android:inputType="text"
+        android:layout_marginLeft="275dp"
+        android:padding="17dp"
+        app:layout_constraintTop_toBottomOf="@id/editNumero"
+        app:layout_constraintStart_toEndOf="@id/editCidade"
+        app:layout_constraintEnd_toEndOf="@id/containerComponentsEndereco"
+        />
+
+    <TextView
+        android:id="@+id/linkVoltar"
+        style="@style/TextLink"
+        android:text="@string/link_voltar"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/containerComponentsEndereco"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/BotaoEntrarCriar"
+        android:id="@+id/botaoCriar"
+        android:text="@string/botao_criar"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintTop_toBottomOf="@id/containerComponentsEndereco"
+        app:layout_constraintEnd_toEndOf="@id/containerComponentsEndereco"
+        app:layout_constraintStart_toStartOf="@id/containerComponentsEndereco"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

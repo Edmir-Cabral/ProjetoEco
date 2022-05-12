@@ -4,11 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Edmir_Jane/AndroidStudioProjects/ProjetoEco2/app/src/main/res/drawable/botao_entrar.xml" value="0.132" />
+        <entry key="..\:/Users/Edmir_Jane/AndroidStudioProjects/ProjetoEco2/app/src/main/res/drawable/botao_link.xml" value="0.144" />
+        <entry key="..\:/Users/Edmir_Jane/AndroidStudioProjects/ProjetoEco2/app/src/main/res/drawable/botao_sair.xml" value="0.144" />
         <entry key="..\:/Users/Edmir_Jane/AndroidStudioProjects/ProjetoEco2/app/src/main/res/drawable/container_components.xml" value="0.13" />
         <entry key="..\:/Users/Edmir_Jane/AndroidStudioProjects/ProjetoEco2/app/src/main/res/drawable/containers_components.xml" value="0.132" />
         <entry key="..\:/Users/Edmir_Jane/AndroidStudioProjects/ProjetoEco2/app/src/main/res/drawable/edit_text.xml" value="0.132" />
-        <entry key="..\:/Users/Edmir_Jane/AndroidStudioProjects/ProjetoEco2/app/src/main/res/layout/activity_form_cadastro.xml" value="0.15" />
+        <entry key="..\:/Users/Edmir_Jane/AndroidStudioProjects/ProjetoEco2/app/src/main/res/layout/activity_form_cadastro.xml" value="0.22" />
         <entry key="..\:/Users/Edmir_Jane/AndroidStudioProjects/ProjetoEco2/app/src/main/res/layout/activity_form_login.xml" value="0.25" />
+        <entry key="..\:/Users/Edmir_Jane/AndroidStudioProjects/ProjetoEco2/app/src/main/res/layout/activity_tela_principal.xml" value="0.25" />
       </map>
     </option>
   </component>

@@ -58,7 +58,7 @@
         />
 
     <androidx.appcompat.widget.AppCompatButton
-        style="@style/BotaoEntrar"
+        style="@style/BotaoEntrarCriar"
         android:id="@+id/botaoEntrar"
         android:text="@string/botao_entrar"
         app:layout_constraintStart_toStartOf="@id/containerComponents"
@@ -72,6 +72,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:visibility="invisible"
+        android:indeterminateTint="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/containerComponents"
