@@ -60,7 +60,7 @@
         />
 
     <EditText
-        android:id="@+id/editFone"
+        android:id="@+id/editSenha"
         style="@style/EditText"
         android:hint="Senha"
         android:inputType="numberPassword"
@@ -156,13 +156,14 @@
         style="@style/TextLink"
         android:text="@string/link_voltar"
         android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/botaoCriarCadastro"
         app:layout_constraintTop_toBottomOf="@id/containerComponentsEndereco"
         />
 
     <androidx.appcompat.widget.AppCompatButton
         style="@style/BotaoEntrarCriar"
-        android:id="@+id/botaoCriar"
+        android:id="@+id/botaoCriarCadastro"
         android:text="@string/botao_criar"
         android:layout_marginLeft="200dp"
         android:layout_marginRight="20dp"
