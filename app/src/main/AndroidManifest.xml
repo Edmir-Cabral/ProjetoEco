@@ -9,6 +9,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjetoEco">
         <activity
+            android:name=".TelaArvores"
+            android:exported="false" />
+        <activity
             android:name=".TelaPrincipal"
             android:exported="false" />
         <activity

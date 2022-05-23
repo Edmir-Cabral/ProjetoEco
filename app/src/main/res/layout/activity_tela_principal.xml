@@ -28,8 +28,8 @@
 
     <androidx.appcompat.widget.AppCompatButton
         style="@style/BotaoEntrarCriar"
-        android:id="@+id/botaoPlanta"
-        android:text="@string/botao_plantas"
+        android:id="@+id/botaoArvores"
+        android:text="@string/botao_arvores"
         app:layout_constraintStart_toStartOf="@id/containerComponentsTelaPrincipal"
         app:layout_constraintEnd_toEndOf="@id/containerComponentsTelaPrincipal"
         app:layout_constraintTop_toTopOf="@id/containerComponentsTelaPrincipal"
@@ -39,7 +39,7 @@
         style="@style/BotaoEntrarCriar"
         android:id="@+id/botaoEcoEspaco"
         android:text="@string/botao_eco_espacos"
-        app:layout_constraintTop_toBottomOf="@id/botaoPlanta"
+        app:layout_constraintTop_toBottomOf="@id/botaoArvores"
         app:layout_constraintEnd_toEndOf="@id/containerComponentsTelaPrincipal"
         app:layout_constraintStart_toStartOf="@id/containerComponentsTelaPrincipal"
         />
@@ -70,5 +70,8 @@
         app:layout_constraintEnd_toEndOf="@id/containerComponentsTelaPrincipal"
         app:layout_constraintStart_toStartOf="@id/containerComponentsTelaPrincipal"
         />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

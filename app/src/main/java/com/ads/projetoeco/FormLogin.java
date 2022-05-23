@@ -25,7 +25,7 @@ public class FormLogin extends AppCompatActivity {
     private EditText edit_email, edit_senha;
     private Button bt_entrar;
     private ProgressBar progressBar;
-    String[] mensagem = {"Preencha todos os campos", "Entrando..."};
+    String[] mensagem = {"Erro ao logar usuário", "Entrando..."};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

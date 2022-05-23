@@ -6,9 +6,10 @@
     <string name="text_cadastro">Cadastro</string>
     <string name="link_voltar">Voltar</string>
     <string name="botao_criar">Criar</string>
-    <string name="botao_plantas">PLANTAS</string>
+    <string name="botao_arvores">ÁRVORES</string>
     <string name="botao_eco_espacos">ECO ESPAÇOS</string>
     <string name="botao_destaques">DESTAQUES</string>
     <string name="botao_atualizar_cadastro">ATUALIZAR CADASTRO</string>
     <string name="botao_sair">SAIR</string>
+    <string name="arvores_diponiveis">Árvores disponíveis</string>
 </resources>
