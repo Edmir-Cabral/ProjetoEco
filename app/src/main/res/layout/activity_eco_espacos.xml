@@ -21,15 +21,24 @@
         app:layout_constraintTop_toTopOf="parent"
         />
 
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/BotaoEntrarCriar"
+        android:id="@+id/botaoBuscar"
+        android:text="@string/botao_Buscar"
+        app:layout_constraintTop_toBottomOf="@id/buscaEcoEspaço"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
     <ImageView
         android:id="@+id/imgMapa"
-        android:layout_width="341dp"
-        android:layout_height="442dp"
+        android:layout_width="363dp"
+        android:layout_height="370dp"
         android:layout_marginTop="20dp"
         android:src="@drawable/img_mapa"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buscaEcoEspaço" />
+        app:layout_constraintTop_toBottomOf="@id/botaoBuscar" />
 
     <androidx.appcompat.widget.AppCompatButton
         style="@style/BotaoEntrarCriar"
