@@ -16,5 +16,14 @@
     <string name="angicoBranco">Angico-branco</string>
     <string name="ipeAmarelo">Ipê-Amarelo</string>
     <string name="eucalipto">Eucalipto</string>
+    <string name="botao_associar">Associar</string>
+    <string name="botao_cancelar_alarme">CANCELAR</string>
+    <string name="botao_definir_alarme">LEMBRETE</string>
+    <string name="botao_criar_alarme">CRIAR</string>
+    <string name="link_definir_alarme">Definir alarme</string>
+    <string name="text_alarme">ALARME</string>
+    <string name="text_hora">00</string>
+    <string name="text_dois_pontos">:</string>
+    <string name="text_minutos">00</string>
 
 </resources>

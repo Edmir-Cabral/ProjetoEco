@@ -13,6 +13,7 @@ public class TelaPrincipal extends AppCompatActivity {
 
     private Button bt_sair;
     private Button bt_plantas;
+    private Button bt_eco_especos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,14 @@ public class TelaPrincipal extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(TelaPrincipal.this, TelaPlantas.class);
+                startActivity(intent);
+            }
+        });
+
+        bt_eco_especos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(TelaPrincipal.this, TelaEcoEspacos.class);
                 startActivity(intent);
             }
         });
@@ -45,5 +54,6 @@ public class TelaPrincipal extends AppCompatActivity {
     private void iniciarComponentes(){
         bt_sair = findViewById(R.id.botaoSair);
         bt_plantas = findViewById(R.id.botaoPlantas);
+        bt_eco_especos = findViewById(R.id.botaoEcoEspaco);
     }
 }

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo4"
+    tools:context=".TelaEcoEspacos">
+
+    <EditText
+        style="@style/EditText"
+        android:id="@+id/buscaEcoEspaço"
+        android:hint="Local"
+        android:drawableLeft="@drawable/ic_search_24"
+        android:drawablePadding="20dp"
+        android:maxLength="24"
+        android:layout_marginTop="40dp"
+        android:inputType="textPostalAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/imgMapa"
+        android:layout_width="341dp"
+        android:layout_height="442dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/img_mapa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buscaEcoEspaço" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/BotaoEntrarCriar"
+        android:id="@+id/botaoAssociar"
+        android:text="@string/botao_associar"
+        app:layout_constraintTop_toBottomOf="@id/imgMapa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/voltarTelaEcoEspaco"
+        style="@style/TextLink"
+        android:text="@string/link_voltar"
+        android:textSize="15dp"
+        android:layout_margin="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/botaoAssociar"
+        />
+
+    <TextView
+        android:id="@+id/linkDefinirAlarme"
+        style="@style/TextLink"
+        android:layout_width="wrap_content"
+        android:text="@string/link_definir_alarme"
+        android:layout_margin="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/botaoAssociar"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

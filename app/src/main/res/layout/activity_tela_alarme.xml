@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo4"
+    tools:context=".TelaAlarme">
+
+    <TextView
+        android:id="@+id/textAlarme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_alarme"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_hora"
+        android:textColor="@color/black"
+        android:textSize="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="125dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textAlarme"
+        />
+
+    <TextView
+        android:id="@+id/textDoisPontos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_dois_pontos"
+        android:textColor="@color/black"
+        android:textSize="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@id/textHora"
+        app:layout_constraintTop_toBottomOf="@id/textAlarme"
+        />
+
+    <TextView
+        android:id="@+id/textMinutos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_minutos"
+        android:textColor="@color/black"
+        android:textSize="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@id/textDoisPontos"
+        app:layout_constraintTop_toBottomOf="@id/textAlarme"
+        />
+
+    <View
+        android:id="@+id/containerComponentsTelaAlarme"
+        style="@style/ContainerComponents"
+        android:layout_height="360dp"
+        app:layout_constraintTop_toBottomOf="@id/textHora"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/BotaoEntrarCriar"
+        android:id="@+id/botaoDefinirAlarme"
+        android:text="@string/botao_definir_alarme"
+        app:layout_constraintStart_toStartOf="@id/containerComponentsTelaAlarme"
+        app:layout_constraintEnd_toEndOf="@id/containerComponentsTelaAlarme"
+        app:layout_constraintTop_toTopOf="@id/containerComponentsTelaAlarme"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/BotaoEntrarCriar"
+        android:id="@+id/botaoCriarAlarme"
+        android:text="@string/botao_criar_alarme"
+        app:layout_constraintTop_toBottomOf="@id/botaoDefinirAlarme"
+        app:layout_constraintEnd_toEndOf="@id/containerComponentsTelaAlarme"
+        app:layout_constraintStart_toStartOf="@id/containerComponentsTelaAlarme"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/BotaoSair"
+        android:id="@+id/botaoCancelarAlarme"
+        android:text="@string/botao_cancelar_alarme"
+        app:layout_constraintTop_toBottomOf="@id/botaoCriarAlarme"
+        app:layout_constraintEnd_toEndOf="@id/containerComponentsTelaAlarme"
+        app:layout_constraintStart_toStartOf="@id/containerComponentsTelaAlarme"
+        />
+
+    <TextView
+        android:id="@+id/voltarTelaAlarme"
+        style="@style/TextLink"
+        android:text="@string/link_voltar"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/containerComponentsTelaAlarme"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
