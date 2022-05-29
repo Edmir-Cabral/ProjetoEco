@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo4"
+    tools:context=".TelaPlantas">
+
+
+    <TextView
+        android:id="@+id/textPlantas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/botao_plantas"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <View
+        style="@style/ContainerComponents"
+        android:id="@+id/containerComponentsTelaPlantas"
+        android:layout_height="415dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textPlantas"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/BotaoEntrarCriar"
+        android:id="@+id/botaoPauBrasil"
+        android:text="@string/pauBrasil"
+        app:layout_constraintStart_toStartOf="@id/containerComponentsTelaPlantas"
+        app:layout_constraintEnd_toEndOf="@id/containerComponentsTelaPlantas"
+        app:layout_constraintTop_toTopOf="@id/containerComponentsTelaPlantas"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/BotaoEntrarCriar"
+        android:id="@+id/botaoIpeAmarelo"
+        android:text="@string/ipeAmarelo"
+        app:layout_constraintTop_toBottomOf="@id/botaoPauBrasil"
+        app:layout_constraintEnd_toEndOf="@id/containerComponentsTelaPlantas"
+        app:layout_constraintStart_toStartOf="@id/containerComponentsTelaPlantas"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/BotaoEntrarCriar"
+        android:id="@+id/botaoAngicoBranco"
+        android:text="@string/angicoBranco"
+        app:layout_constraintTop_toBottomOf="@id/botaoIpeAmarelo"
+        app:layout_constraintEnd_toEndOf="@id/containerComponentsTelaPlantas"
+        app:layout_constraintStart_toStartOf="@id/containerComponentsTelaPlantas"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/BotaoEntrarCriar"
+        android:id="@+id/botaoEucalipto"
+        android:text="@string/eucalipto"
+        app:layout_constraintTop_toBottomOf="@id/botaoAngicoBranco"
+        app:layout_constraintEnd_toEndOf="@id/containerComponentsTelaPlantas"
+        app:layout_constraintStart_toStartOf="@id/containerComponentsTelaPlantas"
+        />
+
+    <TextView
+        android:id="@+id/voltarTelaPlantas"
+        style="@style/TextLink"
+        android:text="@string/link_voltar"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/containerComponentsTelaPlantas"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

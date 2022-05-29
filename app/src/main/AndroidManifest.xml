@@ -9,7 +9,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjetoEco">
         <activity
-            android:name=".TelaArvores"
+            android:name=".TelaEucalipto"
+            android:exported="false" />
+        <activity
+            android:name=".TelaAngicoBranco"
+            android:exported="false" />
+        <activity
+            android:name=".TelaIpeAmarelo"
+            android:exported="false" />
+        <activity
+            android:name=".TelaPauBrasil"
+            android:exported="false" />
+        <activity
+            android:name=".TelaPlantas"
             android:exported="false" />
         <activity
             android:name=".TelaPrincipal"
